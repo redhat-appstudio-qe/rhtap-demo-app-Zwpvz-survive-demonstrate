@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-nvpn
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-vslu-tenant/rhtap-demo-app/hacbs-test-project-nvpn@sha256:4bed46963c5f0a7dd6e1f135030301bef7892250f34c1febdc2cd7b70146f32f
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
