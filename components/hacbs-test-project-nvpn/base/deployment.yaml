@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: hacbs-test-project-nvpn
     spec:
       containers:
-      - image: hacbs-jvm-build-test-project:latest
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-vslu-tenant/rhtap-demo-app/hacbs-test-project-nvpn@sha256:4bed46963c5f0a7dd6e1f135030301bef7892250f34c1febdc2cd7b70146f32f
         name: hacbs-jvm-build-test-project
         ports:
         - containerPort: 8081
